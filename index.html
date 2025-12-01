@@ -11,7 +11,7 @@
 </head>
 <body class="bg-gray-200">
 
-  <header>
+  <header class="fixed w-full inset-x-0 top-0 z-0">
     <nav class="bg-gray-900 text-white">
       <div class="max-w-6xl mx-auto px-4">
         <!-- On rend ce conteneur relatif pour positionner le menu mobile -->
@@ -41,20 +41,22 @@
             class="
               hidden
               text-center                      <!-- caché par défaut -->
-              absolute left-0 top-16      <!-- sous la barre, en mobile -->
-              w-full bg-gray-900          <!-- fond plein en mobile -->
-              flex-col gap-3 px-4 py-4    <!-- colonne en mobile -->
+              absolute right-[0px] top-16      <!-- sous la barre, en mobile -->
+              bg-gray-900          <!-- fond plein en mobile -->
+              flex-col py-3    <!-- colonne en mobile -->
+              w-[100%]
 
+              border-t border-gray-800
               md:static md:w-auto         <!-- comportement normal en desktop -->
               md:flex md:flex-row         <!-- rangée en desktop -->
               md:items-center md:gap-6
               text-sm font-medium
             "
           >
-            <li><a href="#" class="block px-3 py-1 hover:text-blue-300">Accueil</a></li>
-            <li><a href="#" class="block px-3 py-1 hover:text-blue-300">Produits</a></li>
-            <li><a href="#" class="block px-3 py-1 hover:text-blue-300">À propos</a></li>
-            <li><a href="#" class="block px-3 py-1 hover:text-blue-300">Contact</a></li>
+            <li><a href="#" class="block px-3 mt-[-10px] py-2 hover:bg-blue-600 transition duration-300 ease-in-out">Accueil</a></li>
+            <li><a href="#" class="block px-3 py-2 hover:bg-blue-600 transition duration-300 ease-in-out">Produits</a></li>
+            <li><a href="#" class="block px-3 py-2 hover:bg-blue-600 transition duration-300 ease-in-out">À propos</a></li>
+            <li><a href="#" class="block px-3 mb-[-10px] py-2 hover:bg-blue-600 transition duration-300 ease-in-out">Contact</a></li>
           </ul>
 
         </div>
@@ -65,7 +67,7 @@
 
 
 
- <main class="">
+ <main class="pt-10">
   <section aria-labelledby="products-title">
       <h2 id="products-title" class="font-black text-2xl 
                                      flex justify-center 
